@@ -1,0 +1,27 @@
+package chapter04;
+
+class Ticketing {
+	int ticketVolume = 1;
+	
+	public void ticketing() {
+		if  (ticketVolume > 0) {
+			System.out.println(Thread.currentThread().getName()+ " - 티케팅!");
+			ticketVolume--;
+		}else {
+			System.out.println(Thread.currentThread().getName()+ " - 티케팅실패!");
+		}
+		System.out.println(Thread.currentThread().getName()+ " - 티케팅 시도 후 티켓 수 :" + ticketVolume);
+		
+		
+		
+	}
+}
+
+public class Example09 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
